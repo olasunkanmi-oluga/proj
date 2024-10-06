@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluga Olasunkanmi| Software Developer</title>
+	<style> 
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+	text-align:center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6b6b;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.cont {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.cont span {
+    background-color: white;
+    margin: 3px;
+    height: 3px;
+    width: 25px;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #f9ca24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #f9ca24;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: #ff6b6b;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f9ca24;
+    color: white;
+}
+
+
+.skills {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+	
+}
+	
+
+
+.skill-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	
+}
+
+.skill-card {
+    background-color: #00A2E8;
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
+    width: 250px;
+	
+}
+
+
+.portfolio {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+.about {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+	}
+	
+.contact {
+    padding: 2rem;
+    background-color: #f9ca24;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 1rem;
+    border: none;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .cont {
+        display: flex;
+    }
+    .skill-cards,
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">OLUGA OLASUNKANMI</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cont">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero">
+	      <img src='suks.jpg' height ='200'> <br>
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Oluga Olasunkanmi</span></h1>
+            <p>A Passionate Software Developer</p>
+            <a href="#portfolio" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="skills">
+        <h2> Skills</h2>
+        <div class="skill-cards">
+				
+            </div>
+            <div class="skill-card">
+                <h3>Node.js</h3>
+                <p>Experienced in building Restful APIs and full-stack applications.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS/HTML</h3>
+                <p>Expert in building responsive and accessible websites.</p>
+            </div>
+			<div class="skill-card">
+                <h3>PHP </h3>
+                <p>Expert in developing dynamic and interactive webpages, applications, e-commerce platform and more.</p>
+            </div>
+			<div class="skill-card">
+                <h3>JavaScript</h3>
+                <p> Proficient in modern JavaScript frameworks like React.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="project 1.png" alt="Project 1">
+     <div class="project-info">
+                    <h3>Project 1</h3>
+					<br> 
+                    <p>Sampled Homepage of Ecommerce website </p>
+                  
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project 2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+					<br>
+                    <p>Built A Dating website </p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+           Hi, my name is Oluga Olasunkanmi I'm a software developer with a passion for building web applications and solving complex problems. 
+            My expertise spans full-stack development, and I'm always eager to learn new technologies. I specialize in full-stack development, with a focus on creating user-friendly, responsive websites and apps.
+        </p>
+    </section>
+ 
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+		<p>I'd love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to reach out via <a href="mailto:olasunkanmioluga@yahoo.com">Email</a> OR  enter the following </p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Oluga Olasunkanmi. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="insta.png" alt="insta"></a>
+            <a href="#"><img src="facebook.png" alt="facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+			<a href="#"><img src="git.jpg" alt="git"></a>
+        </div>
+    </footer>
+</body>
+</html>
